@@ -29,10 +29,13 @@
 body {
   margin: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+
+  /* временно */
+  background-color: gray;
 }
 
 a {
