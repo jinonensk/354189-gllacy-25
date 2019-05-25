@@ -145,6 +145,8 @@ input[type="radio"].visually-hidden {
 }
 
 .header-main-time {
+  margin: 0px;
+
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -162,6 +164,7 @@ input[type="radio"].visually-hidden {
 /* header end */
 
 /* big slider start */
+
 .slide-title {
   margin: 0px;
 
@@ -170,6 +173,13 @@ input[type="radio"].visually-hidden {
   line-height: 60.35px;
   font-weight: bold;
   color: #ffffff;
+}
+
+.slides {
+  margin: 0px;
+  padding: 0px;
+
+  list-style: none;
 }
 
 .slides .button-orange-big {
@@ -231,7 +241,7 @@ input[type="radio"].visually-hidden {
 .product-list {
   flex-wrap: wrap;
   margin: 0px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   padding: 0px;
 
   list-style: none;
@@ -240,6 +250,7 @@ input[type="radio"].visually-hidden {
 .product {
   width: 267px;
   margin-right: 25px;
+  margin-bottom: 40px;
 
   /* Для сетки */
   box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
@@ -380,8 +391,15 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
 
 }
+.map-contacts {
+  width: 300px;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+}
 
 .map-contacts p {
+  width: 180px;
   margin: 0px;
 
   font-family: "Roboto", Arial, sans-serif;
@@ -392,6 +410,8 @@ input[type="radio"].visually-hidden {
 }
 
 .map-contacts .address {
+  width: 230px;
+
   font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -486,6 +506,18 @@ input[type="radio"].visually-hidden {
 /* --------------------------------- */
 /* --------- catalog start ----------*/
 /* --------------------------------- */
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+
+  list-style: none;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+
+}
 .breadcrumbs a {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
@@ -502,9 +534,28 @@ input[type="radio"].visually-hidden {
   line-height: 41px;
   font-weight: bold;
   color: #ffffff;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+
 }
 
 /* catalog start */
+.catalog .product-list {
+  margin-bottom: 40px;
+}
+
+.pagination-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0px;
+  margin-bottom: 30px;
+  padding: 0px;
+
+
+  list-style: none;
+}
 .pagination-item {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -518,3 +569,4 @@ input[type="radio"].visually-hidden {
 }
 
 /* catalog end */
+
