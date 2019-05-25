@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="header-main">
+  <header class="header-main container columns">
     <div class="column column-menu">
       <a href="#">
         <img class="header-main-logo" src="" alt="">
@@ -36,7 +36,7 @@
   </header>
 
   <main class="main">
-    <section class="slider">
+    <section class="slider container">
       <input class="visually-hidden" type="radio" id="slide-green" name="toggle" checked>
       <input class="visually-hidden" type="radio" id="slide-gray" name="toggle">
       <input class="visually-hidden" type="radio" id="slide-pink" name="toggle">
@@ -59,8 +59,8 @@
       <a class="button button-orange button-orange-big" href="catalog-page.html">Открыть каталог</a>
     </section>
 
-    <section class="offers">
-      <ul class="offers-list">
+    <section class="offers container">
+      <ul class="offers-list columns">
         <li class="offer">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -74,8 +74,8 @@
       </ul>
     </section>
 
-    <section class="products">
-      <ul class="product-list">
+    <section class="products container">
+      <ul class="product-list columns">
         <li class="product">
           <img src="" alt="" class="ice-cream-image">
           <span class="price">310 ₽/кг</span>
@@ -111,9 +111,9 @@
       </ul>
     </section>
 
-    <section class="description">
+    <section class="description container">
       <h1 class="title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
-      <ul class="power-list">
+      <ul class="power-list columns">
         <li class="item">
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         </li>
@@ -128,7 +128,7 @@
         </li>
       </ul>
     </section>
-    <div class="container">
+    <div class="container columns">
       <section class="blog-news">
         <h2 class="blog-news-title">Новое в нашем блоге</h2>
         <a class="post" href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -155,19 +155,23 @@
     </section>
   </main>
 
-  <footer class="footer-main">
+  <footer class="footer-main container columns">
     <ul class="social-list" aria-label="Мы в социальных сетях">
       <li><a class="button-twitter" href="#" aria-label="Твиттер"></a></li>
       <li><a class="button-instagram" href="#" aria-label="Инстаграм"></a></li>
       <li><a class="button-facebook" href="#" aria-label="Фейсбук"></a></li>
       <li><a class="button-vk" href="#" aria-label="Вконтакте"></a></li>
     </ul>
-    <ul class="footer-link-list">
-      <li><a class="for-customers" href="">Для поставщиков</a></li>
-      <li><a href="">Наши документы</a></li>
-      <li><a href="">О производстве</a></li>
-      <li><a href="">Экологические стандарты</a></li>
-    </ul>
+    <div class="footer-link-wrapper columns">
+      <ul class="footer-link-list-left">
+        <li><a class="for-customers" href="">Для поставщиков</a></li>
+        <li><a href="">О производстве</a></li>
+      </ul>
+      <ul class="footer-link-list-right">
+        <li><a href="">Наши документы</a></li>
+        <li><a href="">Экологические стандарты</a></li>
+      </ul>
+    </div>
     <p class="developers">Сделано в <a href="#">HTML Academy</a> © 2019</p>
   </footer>
 </body>
