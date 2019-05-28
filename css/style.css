@@ -176,7 +176,7 @@ input[type="radio"].visually-hidden {
 /* offers end */
 
 /* products start */
-.price {
+.product-price {
 
   font-size: 45px;
   line-height: 45px;
@@ -194,7 +194,7 @@ input[type="radio"].visually-hidden {
 /* products end */
 
 /* description start */
-.description .title {
+.description .description-title {
 
   font-size: 24px;
   line-height: 30px;
