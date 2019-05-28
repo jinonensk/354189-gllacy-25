@@ -35,8 +35,7 @@ body {
   font-weight: 500;
   color: #ffffff;
 
-  /* временно */
-  background-color: gray;
+  background-color: rgb(138, 157, 143);
 }
 
 a {
@@ -85,24 +84,46 @@ input[type="radio"].visually-hidden {
 /* --------------------------------- */
 /* header start */
 .navigation-link-list a {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
   color: #ffffff;
 }
 
-.user-actions-list .button-enter,
-.user-actions-list .button-cart {
-  font-family: "Roboto", Arial, sans-serif;
+.catalog-navigation .new {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.catalog-navigation a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.header-buttons-list .button-enter,
+.header-buttons-list .button-cart {
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   color: #ffffff;
 }
 
+.log-in-link {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #000000;
+}
+
 .header-main-time {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
@@ -110,7 +131,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-main-phone {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
@@ -120,7 +141,7 @@ input[type="radio"].visually-hidden {
 
 /* big slider start */
 .slide-title {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 60px;
   line-height: 60.35px;
   font-weight: bold;
@@ -128,7 +149,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slides .button-orange-big {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 32px;
   line-height: 44px;
   font-weight: bold;
@@ -138,7 +159,7 @@ input[type="radio"].visually-hidden {
 
 /* offers start */
 .offer h2 {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
@@ -146,7 +167,7 @@ input[type="radio"].visually-hidden {
 }
 
 .offer p {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
@@ -156,7 +177,7 @@ input[type="radio"].visually-hidden {
 
 /* products start */
 .price {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
@@ -164,7 +185,7 @@ input[type="radio"].visually-hidden {
 }
 
 .name {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -174,7 +195,7 @@ input[type="radio"].visually-hidden {
 
 /* description start */
 .description .title {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -182,7 +203,7 @@ input[type="radio"].visually-hidden {
 }
 
 .description p {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -192,15 +213,23 @@ input[type="radio"].visually-hidden {
 
 /* blog + mail start */
 .blog-news h2 {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   color: #000000;
 }
 
+.blog-news .post {
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
 .blog-news p {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -208,7 +237,7 @@ input[type="radio"].visually-hidden {
 }
 
 .mailing p {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -218,7 +247,7 @@ input[type="radio"].visually-hidden {
 
 /* map start */
 .map-contacts p {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -226,7 +255,7 @@ input[type="radio"].visually-hidden {
 }
 
 .map-contacts .address {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -234,7 +263,7 @@ input[type="radio"].visually-hidden {
 }
 
 .map-contacts .phone {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -244,7 +273,7 @@ input[type="radio"].visually-hidden {
 
 /* footer start */
 .footer-link-list a {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -256,7 +285,7 @@ input[type="radio"].visually-hidden {
 }
 
 .developers {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -264,7 +293,7 @@ input[type="radio"].visually-hidden {
 }
 
 .developers a {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -275,8 +304,27 @@ input[type="radio"].visually-hidden {
 /* --------------------------------- */
 /* --------- catalog start ----------*/
 /* --------------------------------- */
+.cart-view {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.cart-view .order-item-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.cart-view .total-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
 .breadcrumbs a {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -284,7 +332,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-title {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
@@ -293,7 +341,7 @@ input[type="radio"].visually-hidden {
 
 /* catalog start */
 .pagination-item {
-  font-family: "Roboto", Arial, sans-serif;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;

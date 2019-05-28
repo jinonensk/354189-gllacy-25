@@ -10,35 +10,89 @@
 
 <body>
   <header class="header-main">
-    <div class="column column-menu">
-      <a href="#">
-        <img class="header-main-logo" src="" alt="">
-      </a>
-      <nav class="header-main-navigation">
-        <ul class="navigation-link-list">
-          <li><a class="current" href="#">Каталог</a></li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О Компании</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="column column-header-form">
-      <ul class="user-actions-list">
-        <li><a class="button button-search" href="#"></a></li>
-        <li><a class="button button-enter" href="#">Вход</a></li>
-        <li><a class="button button-cart cart-full" href="#">2 товара</a></li>
+    <a href="index.html">
+      <img class="header-main-logo" src="" alt="">
+    </a>
+    <nav class="header-main-navigation">
+      <ul class="navigation-link-list">
+        <li>
+          <a class="current" href="#">Каталог</a>
+          <ul class="catalog-navigation">
+            <li><a class="new" href="#">Новинки</a></li>
+            <li><a href="catalog-page.html">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О Компании</a></li>
       </ul>
-      <div class="header-main-contacts">
-        <p class="header-main-time">С 10 до 20, ежедневно</p>
-        <a class="header-main-phone" href="tel:+88124502525">8 812 450-25-25</a>
-      </div>
+    </nav>
+    <ul class="header-buttons-list">
+      <li>
+        <a class="button button-search" href="#"></a>
+        <form class="header-main-search">
+          <label for="search" aria-label="Поле поиска"></label>
+          <input type="search" class="header-search" name="header-main-search" id="search" placeholder="Что ищем?" autocomplete="off">
+        </form>
+      </li>
+      <li>
+        <a class="button button-enter" href="sing-in.html">Вход</a>
+        <form class="log-in-form" method="get" action="https://echo.htmlacademy.ru" id="log-in-form">
+          <ul class="log-in-form-list">
+            <li>
+              <label for="user-email"></label>
+              <input type="email" name="user-email" id="user-email" placeholder="Электронная почта">
+            </li>
+            <li>
+              <label for="user-password"></label>
+              <input type="password" name="user-password" id="user-password" placeholder="Пароль">
+            </li>
+          </ul>
+          <ul class="user-action-list">
+            <li>
+              <a href="#" class="button button-orange">Войти</a>
+            </li>
+            <li>
+              <a href="#" class="log-in-link">Забыли пароль?</a>
+            </li>
+            <li>
+              <a href="#" class="log-in-link">Новая регистрация</a>
+            </li>
+          </ul>
+        </form>
+      </li>
+      <li>
+        <a class="button button-cart cart-full" href="cart.html">2 товара</a>
+        <div class="cart-view">
+          <table class="order">
+            <tr class="order-item">
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х <span class="order-item-price">200 руб.</span></td>
+              <td>300 руб.</td>
+            </tr>
+            <tr class="order-item">
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг х <span class="order-item-price">300 руб.</span></td>
+              <td>450 руб.</td>
+            </tr>
+          </table>
+          <p class="total-price">Цена: 750 руб.</p>
+          <a class="button button-orange" href="#">Оформить заказ</a>
+        </div>
+      </li>
+    </ul>
+    <div class="header-main-contacts">
+      <p class="header-main-time">С 10 до 20, ежедневно</p>
+      <a class="header-main-phone" href="tel:+88124502525">8 812 450-25-25</a>
     </div>
   </header>
 
   <main class="main">
 
   <ul class="breadcrumbs">
-    <li><a class="home" href="index.html">Главная</a></li>
+    <li><a href="index.html">Главная</a></li>
     <li><a href="catalog.html">Каталог</a></li>
     <li class="breadcrumbs-current">Сливочное</li>
   </ul>
@@ -176,7 +230,14 @@
       <li><a href="">О производстве</a></li>
       <li><a href="">Экологические стандарты</a></li>
     </ul>
-    <p class="developers">Сделано в <a href="#">HTML Academy</a> © 2019</p>
+    <div class="developers-container">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="" alt="Html Academy logo">
+      </a>
+      <p class="developers">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+    </div>
   </footer>
+
+  <script src="js/javascript.js"></script>
 </body>
 </html>
