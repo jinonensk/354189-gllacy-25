@@ -176,6 +176,10 @@ input[type="radio"].visually-hidden {
 /* offers end */
 
 /* products start */
+.ice-cream-image {
+  border-radius: 50%;
+}
+
 .product-price {
 
   font-size: 45px;
@@ -309,6 +313,10 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   font-weight: 400;
   color: #000000;
+}
+
+.cart-view img {
+  border-radius: 50%;
 }
 
 .cart-view .order-item-price {
