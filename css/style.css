@@ -67,9 +67,20 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 940px;
+  width: 1150px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 25px;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+
+   /* Для сетки */
+   box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
 }
 
 .button-orange {
@@ -79,6 +90,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: #ffffff;
 }
+
 /* --------------------------------- */
 /* ------------- index --------------*/
 /* --------------------------------- */
@@ -98,6 +110,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.catalog-navigation {
+  display: none;
+}
+
 .catalog-navigation a {
   font-size: 14px;
   line-height: 18px;
@@ -112,6 +128,18 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   font-weight: 500;
   color: #ffffff;
+}
+
+.header-main-search {
+  display: none;
+}
+
+.log-in-form {
+  display: none;
+}
+
+.cart-view {
+  display: none;
 }
 
 .log-in-link {
@@ -140,6 +168,14 @@ input[type="radio"].visually-hidden {
 /* header end */
 
 /* big slider start */
+.slide {
+  display: none;
+}
+
+.slide-show {
+  display: block;
+}
+
 .slide-title {
 
   font-size: 60px;
@@ -158,7 +194,32 @@ input[type="radio"].visually-hidden {
 /* big slider end */
 
 /* offers start */
+.offers-list {
+  flex-wrap: wrap;
+
+  margin: 0px;
+  margin-bottom: 40px;
+  padding: 0px;
+
+  list-style: none;
+}
+
+.offer {
+  width: 560px;
+
+  margin-right: 25px;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+
+}
+
+.offer:nth-child(2n) {
+  margin-right: 0px;
+}
+
 .offer h2 {
+  margin: 0;
 
   font-size: 35px;
   line-height: 41px;
@@ -167,6 +228,7 @@ input[type="radio"].visually-hidden {
 }
 
 .offer p {
+  margin: 0;
 
   font-size: 18px;
   line-height: 22px;
@@ -176,6 +238,28 @@ input[type="radio"].visually-hidden {
 /* offers end */
 
 /* products start */
+.product-list {
+  flex-wrap: wrap;
+  margin: 0px;
+  margin-bottom: 40px;
+  padding: 0px;
+
+  list-style: none;
+}
+
+.product {
+  width: 267px;
+  margin-right: 25px;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+
+}
+
+.product:nth-child(4n) {
+  margin-right: 0px;
+}
+
 .ice-cream-image {
   border-radius: 50%;
 }
@@ -198,12 +282,46 @@ input[type="radio"].visually-hidden {
 /* products end */
 
 /* description start */
+.description {
+  margin-bottom: 40px;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+
+}
+
 .description .description-title {
+  margin: 0px;
 
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
   color: #000000;
+}
+
+.power-list {
+  flex-wrap: wrap;
+
+  margin: 0px;
+  padding: 0px;
+
+  list-style: none;
+}
+
+.power-list .item {
+  width: 560px;
+  margin-right: 25px;
+  padding-left: 60px;
+
+  box-sizing: border-box;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+
+}
+
+.power-list .item:nth-child(2n) {
+  margin-right: 0px;
 }
 
 .description p {
@@ -233,6 +351,7 @@ input[type="radio"].visually-hidden {
 }
 
 .blog-news p {
+  margin: 0px;
 
   font-size: 24px;
   line-height: 30px;
@@ -240,7 +359,17 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.mailing {
+  width: 560px;
+  margin-bottom: 40px;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+
+}
+
 .mailing p {
+  margin: 0px;
 
   font-size: 16px;
   line-height: 22px;
@@ -331,6 +460,19 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+
+  list-style: none;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+
+}
+
 .breadcrumbs a {
 
   font-size: 14px;
@@ -348,6 +490,18 @@ input[type="radio"].visually-hidden {
 }
 
 /* catalog start */
+.pagination-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0px;
+  margin-bottom: 30px;
+  padding: 0px;
+
+
+  list-style: none;
+}
+
 .pagination-item {
 
   font-size: 16px;
