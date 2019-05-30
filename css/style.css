@@ -1,0 +1,355 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Regular"),
+       url(../fonts/roboto.woff) format("woff"),
+       url(../fonts/roboto.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"),
+       url(../fonts/robotobold.woff) format("woff"),
+       url(../fonts/robotobold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"),
+       url(../fonts/robotomedium.woff) format("woff"),
+       url(../fonts/robotomedium.woff2) format("woff2");
+}
+
+
+body {
+  margin: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: rgb(138, 157, 143);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.button-orange {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* --------------------------------- */
+/* ------------- index --------------*/
+/* --------------------------------- */
+/* header start */
+.navigation-link-list a {
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.catalog-navigation .new {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.catalog-navigation a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.header-buttons-list .button-enter,
+.header-buttons-list .button-cart {
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.log-in-link {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #000000;
+}
+
+.header-main-time {
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.header-main-phone {
+
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* header end */
+
+/* big slider start */
+.slide-title {
+
+  font-size: 60px;
+  line-height: 60.35px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.slides .button-orange-big {
+
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* big slider end */
+
+/* offers start */
+.offer h2 {
+
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.offer p {
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* offers end */
+
+/* products start */
+.product-price {
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.product-name {
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+}
+/* products end */
+
+/* description start */
+.description .description-title {
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.description p {
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000000;
+}
+/* description end */
+
+/* blog + mail start */
+.blog-news h2 {
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.blog-news .blog-news-post {
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.blog-news p {
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.mailing p {
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000000;
+}
+/* blog + mail end */
+
+/* map start */
+.map-contacts p {
+
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.map-contacts .address {
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.map-contacts .phone {
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+/* map end */
+
+/* footer start */
+.footer-link-list a {
+
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-link-list .for-customers {
+  font-weight: bold;
+}
+
+.developers {
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.developers a {
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+/* footer end */
+
+/* --------------------------------- */
+/* --------- catalog start ----------*/
+/* --------------------------------- */
+.cart-view {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.cart-view .order-item-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.cart-view .total-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.breadcrumbs a {
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.catalog-title {
+
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* catalog start */
+.pagination-item {
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.pagination-item-active {
+  color: #000000;
+}
+
+/* catalog end */
