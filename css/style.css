@@ -95,6 +95,29 @@ input[type="radio"].visually-hidden {
 /* ------------- index --------------*/
 /* --------------------------------- */
 /* header start */
+.header-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.navigation-link-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 0px;
+  padding: 0px;
+
+  list-style: none;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+
+}
+
 .navigation-link-list a {
 
   font-size: 16px;
@@ -119,6 +142,21 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 400;
   color: #000000;
+}
+
+.header-buttons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 396px;
+  margin: 0px;
+  padding: 0px;
+
+  list-style: none;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
 }
 
 .header-buttons-list .button-enter,
@@ -150,7 +188,13 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.header-main-contacts {
+  width: 100%;
+  text-align: end;
+}
+
 .header-main-time {
+  margin: 0px;
 
   font-size: 14px;
   line-height: 16px;
@@ -190,6 +234,13 @@ input[type="radio"].visually-hidden {
   line-height: 44px;
   font-weight: bold;
   color: #ffffff;
+}
+
+.slider-controls {
+  display: flex;
+  flex-direction: row;
+
+  list-style: none;
 }
 /* big slider end */
 
@@ -379,6 +430,28 @@ input[type="radio"].visually-hidden {
 /* blog + mail end */
 
 /* map start */
+.map {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+
+.map-static {
+  margin: auto;
+}
+
+.map-contacts {
+  position: absolute;
+
+  width: 302px;
+  margin-top: 60px;
+  margin-left: 450px;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+}
+
 .map-contacts p {
 
   font-size: 14px;
