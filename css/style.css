@@ -303,6 +303,18 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #ffffff;
 }
+
+/* popup start */
+.ask-popup-title {
+  padding: 0px;
+  margin: 0px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000000;
+}
+/* popup end */
 /* footer end */
 
 /* --------------------------------- */
@@ -346,6 +358,149 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: #ffffff;
 }
+
+/* filter start */
+.filters-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.filters-form fieldset {
+  margin: 0px;
+  padding: 0px;
+
+  border: none;
+}
+
+.filters-form select {
+  width: 193px;
+  height: 36px;
+  margin-right: 15px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+.filters-form select::-ms-expand {
+  color: yellow;
+  background: red;
+}
+
+/* price controls. Start */
+.range-controls {
+  position: relative;
+
+  margin-right: 15px;
+  height: 36px;
+  width: 220px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+.range-controls .scale {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+
+  width: 176px;
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.range-controls .bar {
+  width: 50%;
+  height: 2px;
+
+  background: rgba(255, 255, 255, 1);;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 6px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+          box-shadow: 0 2px 1px 0 #cfcfcf;
+
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 20px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+/* price-controls end */
+
+/* radio */
+.filter-fat-list {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0px;
+  margin-right: 15px;
+  padding: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 36px;
+  min-width: 220px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+
+  list-style: none;
+}
+
+.filter-fat label {
+  padding-left: 30px;
+  margin-right: 18px;
+}
+
+/* checkbox */
+.filter-fillers {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0px;
+  margin-right: 15px;
+  padding: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 36px;
+  min-width: 220px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+
+  list-style: none;
+}
+
+.filter-fillers label {
+  padding-left: 30px;
+  margin-right: 18px;
+}
+
+/* button */
+.filter-apply-button {
+  height: 36px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+/* filter end */
 
 /* catalog start */
 .pagination-item {
