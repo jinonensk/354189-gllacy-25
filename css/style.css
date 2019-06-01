@@ -331,6 +331,13 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
+.order-item a {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
 .cart-view .order-item-price {
   font-size: 15px;
   line-height: 18px;
@@ -373,6 +380,19 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.filters-form .fieldset-title {
+  margin: 0px;
+  padding: 0px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+label.fieldset-title {
+  display: block;
+}
+
 .filters-form select {
   width: 193px;
   height: 36px;
@@ -381,6 +401,8 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
 }
+
+
 
 .filters-form select::-ms-expand {
   color: yellow;
