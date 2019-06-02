@@ -11,7 +11,7 @@
 <body>
   <header class="header-main container">
     <a class="header-main-logo-wrapper">
-      <img class="header-main-logo" src="img/logo.png" width="154" height="64" alt="Логотип Глейси">
+      <img class="header-main-logo" src="img/svg/logo.svg" width="154" height="64" alt="Логотип Глейси">
     </a>
     <nav class="header-main-navigation">
       <ul class="navigation-link-list">
@@ -91,9 +91,9 @@
         </li>
       </ul>
       <ul class="slider-controls">
-        <li><button type="button" class="slider-control control-active" data-slide="#slide-green"></button></li>
-        <li><button type="button" class="slider-control" data-slide="#slide-gray"></button></li>
-        <li><button type="button" class="slider-control" data-slide="#slide-pink"></button></li>
+        <li><button type="button" class="slider-control control-active" data-slide="#slide-green" aria-label="Первый слайдер"></button></li>
+        <li><button type="button" class="slider-control" data-slide="#slide-gray" aria-label="Второй слайдер"></button></li>
+        <li><button type="button" class="slider-control" data-slide="#slide-pink" aria-label="Третий слайдер"></button></li>
       </ul>
     </section>
 
@@ -208,11 +208,34 @@
     </ul>
     <div class="developers-container">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Html Academy logo">
+        <img src="img/svg/logo-htmlacademy.svg" width="108" height="39" alt="Html Academy logo">
       </a>
       <p class="developers">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
     </div>
   </footer>
+
+  <!-- popup form -->
+  <section class="aks-popup">
+    <form class="ask-popup-form" method="get" action="https://echo.htmlacademy.ru" id="letter-form">
+      <h2 class="ask-popup-title">Мы обязательно вам ответим</h2>
+      <ul class="form-list">
+        <li>
+          <label for="user-name"></label>
+          <input type="text" name="user-name" id="user-name" placeholder="Как вас зовут?">
+        </li>
+        <li>
+          <label for="user-email"></label>
+          <input type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?">
+        </li>
+        <li>
+          <label for="user-text"></label>
+          <textarea name="user-text" id="user-text" rows="5" placeholder="Напишите что-нибудь"></textarea>
+        </li>
+      </ul>
+      <button class="button button-orange">Отправить</button>
+    </form>
+    <button class="button-close" type="button" aria-label="Закрыть"></button>
+  </section>
 
   <script src="js/javascript.js"></script>
 </body>
