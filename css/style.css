@@ -135,6 +135,29 @@ input[type="radio"].visually-hidden {
 /* ------------- index --------------*/
 /* --------------------------------- */
 /* header start */
+.header-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.navigation-link-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 0px;
+  padding: 0px;
+
+  list-style: none;
+
+  /* Для сетки */
+  box-shadow: inset 0px 0px 0px 1px rgba(190, 14, 14, 0.5)
+
+}
+
 .navigation-link {
   display: inline-block;
   box-sizing: border-box;
