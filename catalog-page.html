@@ -16,7 +16,7 @@
     <nav class="header-main-navigation">
       <ul class="navigation-link-list">
         <li>
-          <a class="current-page" href="#">Каталог</a>
+          <a class="navigation-link current-page" href="#">Каталог</a>
           <ul class="catalog-navigation">
             <li><a class="new" href="#">Новинки</a></li>
             <li><a class="current-section">Сливочное</a></li>
@@ -25,8 +25,8 @@
             <li><a href="#">Мелорин</a></li>
           </ul>
         </li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О Компании</a></li>
+        <li><a class="navigation-link" href="#">Доставка и оплата</a></li>
+        <li><a class="navigation-link" href="#">О Компании</a></li>
       </ul>
     </nav>
     <ul class="header-buttons-list">
@@ -99,7 +99,6 @@
 
     <section class="filters">
       <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
-        <!-- Когда-нибудь здесь будут фильтры -->
         <fieldset>
           <label class="fieldset-title" for="sort-select">Сортировка:</label>
           <select name="sort" id="sort-select">
@@ -203,7 +202,7 @@
             </div>
           </li>
           <li class="product">
-          <div class="transparent-product-layer"></div>
+          <div class="transparent-product-layer">
               <img class="ice-cream-image" src="img/ice-cream-415.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               <span class="product-price">415 ₽/кг</span>
               <a href="#"><h2 class="product-name">Сливочное крем-брюле с карамельной подливкой</h2></a>
@@ -211,7 +210,7 @@
             </div>
           </li>
           <li class="product">
-          <div class="transparent-product-layer"></div>
+          <div class="transparent-product-layer">
               <img class="ice-cream-image" src="img/ice-cream-325.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
               <span class="product-price">325 ₽/кг</span>
               <a href="#"><h2 class="product-name">Сливочное с брусничным джемом</h2></a>
@@ -219,7 +218,7 @@
             </div>
           </li>
           <li class="product">
-          <div class="transparent-product-layer"></div>
+          <div class="transparent-product-layer">
               <img class="ice-cream-image" src="img/ice-cream-410.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
               <span class="product-price">410 ₽/кг</span>
               <a href="#"><h2 class="product-name">Сливочно-черничное с цельными ягодами черники</h2></a>
@@ -227,7 +226,7 @@
             </div>
           </li>
           <li class="product">
-          <div class="transparent-product-layer"></div>
+          <div class="transparent-product-layer">
               <img class="ice-cream-image" src="img/ice-cream-375.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
               <span class="product-price">375 ₽/кг</span>
               <a href="#"><h2 class="product-name">Сливочно-лимонное с карамельной присыпкой</h2></a>
@@ -235,7 +234,7 @@
             </div>
           </li>
           <li class="product">
-          <div class="transparent-product-layer"></div>
+          <div class="transparent-product-layer">
               <img class="ice-cream-image" src="img/ice-cream-320.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
               <span class="product-price">320 ₽/кг</span>
               <a href="#" cproduct-lass="product-name"><h2 class="product-name">Сливочное с шоколадной стружкой</h2></a>
@@ -243,7 +242,7 @@
             </div>
           </li>
           <li class="product">
-            <div class="transparent-product-layer"></div>
+            <div class="transparent-product-layer">
               <img class="ice-cream-image" src="img/ice-cream-440.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
               <span class="product-price">440 ₽/кг</span>
               <a href="#" class="product-name"><h2 class="product-name">Сливочно-ванильное с кусочками шоколада</h2></a>
@@ -251,7 +250,7 @@
             </div>
           </li>
           <li class="product">
-            <div class="transparent-product-layer"></div>
+            <div class="transparent-product-layer">
               <img class="ice-cream-image" src="img/ice-cream-435.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
               <span class="product-price">435 ₽/кг</span>
               <a href="#" class="product-name"><h2 class="product-name">Сливочноe с ментоловым сиропом</h2></a>
@@ -259,7 +258,7 @@
             </div>
           </li>
           <li class="product">
-            <div class="transparent-product-layer"></div>
+            <div class="transparent-product-layer">
               <img class="ice-cream-image" src="img/ice-cream-355_cream.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
               <span class="product-price">355 ₽/кг</span>
               <a href="#" class="product-name"><h2 class="product-name">Сливочное с кусочками черного шоколада</h2></a>
@@ -267,7 +266,7 @@
             </div>
           </li>
           <li class="product">
-            <div class="transparent-product-layer"></div>
+            <div class="transparent-product-layer">
               <img class="ice-cream-image" src="img/ice-cream-420.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
               <span class="product-price">420 ₽/кг</span>
               <a href="#"><h2 class="product-name">Сливочное с мятным сиропом</h2></a>
@@ -295,10 +294,10 @@
       <li><a class="social-button button-vk" href="#" aria-label="Вконтакте"></a></li>
     </ul>
     <ul class="footer-link-list">
-      <li><a class="for-customers" href="">&#10084; Для поставщиков</a></li>
-      <li><a href="">Наши документы</a></li>
-      <li><a href="">О производстве</a></li>
-      <li><a href="">Экологические стандарты</a></li>
+      <li><a class="for-customers" href="#">Для поставщиков</a></li>
+      <li><a href="#">Наши документы</a></li>
+      <li><a href="#">О производстве</a></li>
+      <li><a href="#">Экологические стандарты</a></li>
     </ul>
     <div class="developers-container">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
