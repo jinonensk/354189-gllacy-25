@@ -87,17 +87,18 @@
     </div>
   </header>
 
-  <main class="main container">
+  <main class="catalog-main">
 
-    <ul class="breadcrumbs">
+    <ul class="breadcrumbs container">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог</a></li>
       <li class="breadcrumbs-current">Сливочное</li>
     </ul>
-
-    <h1 class="catalog-title">Сливочное мороженое</h1>
-
-    <section class="filters">
+    <div class="catalog-title-wrapper container">
+      <h1 class="catalog-title">Сливочное мороженое</h1>
+    </div>
+    <section class="filters container">
+      <h2 class="visually-hidden">Фильты каталога товаров</h2>
       <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <label class="fieldset-title" for="sort-select">Сортировка:</label>
@@ -174,8 +175,8 @@
       </form>
     </section>
 
-    <section class="catalog">
-      <h2 class="visually-hidden">Список товаров</h3>
+    <section class="catalog container-wide">
+      <h2 class="visually-hidden">Список товаров</h2>
         <ul class="product-list columns">
           <li class="product">
             <div class="transparent-product-layer">
@@ -274,7 +275,7 @@
             </div>
           </li>
         </ul>
-      <ul class="pagination-list" aria-label="Страницы товаров">
+      <ul class="pagination-list">
         <li><a class="pagination-item item-previous" href="#" aria-label="Предыдущая">&lt;</a></li>
         <li><a class="pagination-item pagination-item-active" href="#">1</a></li>
         <li><a class="pagination-item" href="#">2</a></li>
@@ -287,22 +288,18 @@
   </main>
 
   <footer class="footer-main container columns">
-    <ul class="social-list" aria-label="Мы в социальных сетях">
+    <ul class="social-list">
       <li><a class="social-button button-twitter" href="#" aria-label="Твиттер">t</a></li>
       <li><a class="social-button button-instagram" href="#" aria-label="Инстаграм">i</a></li>
       <li><a class="social-button button-facebook" href="#" aria-label="Фейсбук">f</a></li>
       <li><a class="social-button button-vk" href="#" aria-label="Вконтакте">v</a></li>
     </ul>
-    <div class="footer-links-wrapper">
-      <ul class="footer-links-column-left">
-        <li><a class="for-customers" href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-      </ul>
-      <ul class="footer-links-column-right">
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
-    </div>
+    <ul class="footer-links-list">
+      <li><a class="for-customers" href="#">Для поставщиков</a></li>
+      <li><a href="#">Наши документы</a></li>
+      <li><a href="#">О производстве</a></li>
+      <li><a href="#">Экологические стандарты</a></li>
+    </ul>
     <div class="developers-container">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/svg/logo-htmlacademy.svg" width="108" height="39" alt="Html Academy logo">

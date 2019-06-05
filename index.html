@@ -99,12 +99,12 @@
 
     <section class="offers container">
       <ul class="offers-list columns">
-        <li class="offer">
+        <li class="offer offer-raspberry">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="button button-orange" href="">Хочу варенье!</a>
         </li>
-        <li class="offer">
+        <li class="offer offer-chocolate">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="button button-orange" href="">Хочу шоколадки!</a>
@@ -112,7 +112,7 @@
       </ul>
     </section>
 
-    <section class="products container">
+    <section class="products container-wide">
       <ul class="product-list columns">
         <li class="product">
           <div class="transparent-product-layer">
@@ -166,7 +166,7 @@
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
-      <div>
+      </div>
     </section>
     <div class="container columns">
       <section class="blog-news">
@@ -185,6 +185,7 @@
       </section>
     </div>
     <section class="map">
+      <h2 class="visually-hidden">Как нас найти</h2>
       <img class="map-static" src="img/index-map.jpg" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <div class="map-contacts">
         <p>Адрес главного офиса и&nbsp;офлайн-магазина:</p>
@@ -198,22 +199,18 @@
   </main>
 
   <footer class="footer-main container columns">
-    <ul class="social-list" aria-label="Мы в социальных сетях">
+    <ul class="social-list">
       <li><a class="social-button button-twitter" href="#" aria-label="Твиттер">t</a></li>
       <li><a class="social-button button-instagram" href="#" aria-label="Инстаграм">i</a></li>
       <li><a class="social-button button-facebook" href="#" aria-label="Фейсбук">f</a></li>
       <li><a class="social-button button-vk" href="#" aria-label="Вконтакте">v</a></li>
     </ul>
-    <div class="footer-links-wrapper">
-      <ul class="footer-links-column-left">
-        <li><a class="for-customers" href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-      </ul>
-      <ul class="footer-links-column-right">
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
-    </div>
+    <ul class="footer-links-list">
+      <li><a class="for-customers" href="#">Для поставщиков</a></li>
+      <li><a href="#">Наши документы</a></li>
+      <li><a href="#">О производстве</a></li>
+      <li><a href="#">Экологические стандарты</a></li>
+    </ul>
     <div class="developers-container">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/svg/logo-htmlacademy.svg" width="108" height="39" alt="Html Academy logo">
@@ -223,7 +220,7 @@
   </footer>
 
   <!-- popup form -->
-  <section class="aks-popup">
+  <section class="ask-popup">
     <form class="ask-popup-form" method="get" action="https://echo.htmlacademy.ru" id="letter-form">
       <h2 class="ask-popup-title">Мы обязательно вам ответим</h2>
       <ul class="form-list">
@@ -232,8 +229,8 @@
           <input type="text" name="user-name" id="user-name" placeholder="Как вас зовут?">
         </li>
         <li>
-          <label for="user-email"></label>
-          <input type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?">
+          <label for="popup-user-email"></label>
+          <input type="email" name="popup-user-email" id="popup-user-email" placeholder="Ваша почта для ответа?">
         </li>
         <li>
           <label for="user-text"></label>
