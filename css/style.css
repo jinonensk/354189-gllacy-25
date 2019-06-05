@@ -555,7 +555,7 @@ border-radius: 10px;
 .product-list {
   flex-wrap: wrap;
   margin: 0px;
-  margin-bottom: 45px;
+  /* margin-bottom: 45px; */
   padding: 0px;
 
   list-style: none;
@@ -635,7 +635,7 @@ border-radius: 10px;
 /* description start */
 .description {
   margin-bottom: 40px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 
   /* background-image: url(../img/bcg_waffle-pattern_.jpg);
   background-repeat: repeat;
@@ -1216,6 +1216,7 @@ label.fieldset-title {
   justify-content: flex-end;
   margin: 0px;
   margin-bottom: 48px;
+  margin-top: 45px;
   padding: 0px;
 
 
