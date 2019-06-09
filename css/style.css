@@ -206,7 +206,7 @@ input[type="radio"].visually-hidden {
 .tooltip-trigger::after {
   content: '';
   position: absolute;
-  top: 19px;
+  top: 32px;
   left: 5px;
   width: 68px;
   height: 20px;
@@ -236,8 +236,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-navigation:hover,
-.tooltip-trigger:hover + .catalog-navigation,
-.tooltip-trigger:focus + .catalog-navigation {
+.tooltip-trigger:hover .catalog-navigation,
+.navigation-link:focus + .catalog-navigation {
   pointer-events: auto;
   opacity: 1;
 }
@@ -304,6 +304,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0px;
   margin-left: auto;
+  margin-bottom: 20px;
   padding: 0px;
   padding-top: 14px;
 
@@ -385,23 +386,35 @@ input[type="radio"].visually-hidden {
   fill: #ffffff;
 }
 
-.button-search:hover,
-.button-enter:hover,
-.button-cart:hover {
+.tooltip-trigger:hover .button-search,
+.tooltip-trigger:hover .button-enter,
+.tooltip-trigger:hover .button-cart {
   color: #323232;
 
   background-color: rgba(255, 255, 255, 1);
 }
 
-.button-search:hover svg,
-.button-enter:hover svg,
-.button-cart:hover svg {
+.button-search:focus,
+.button-enter:focus,
+.button-cart:focus {
+  color: #323232;
+
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.button-search:focus svg,
+.button-enter:focus svg,
+.button-cart:focus svg {
+  fill: #323232;
+}
+
+.tooltip-trigger:hover svg {
   fill: #323232;
 }
 
 .header-main-search {
   position: absolute;
-  top: calc(100% - 18px);
+  top: calc(100% + 2px);
   right: 0;
 
   width: 342px;
@@ -418,9 +431,13 @@ input[type="radio"].visually-hidden {
 }
 
 .header-main-search:hover,
-.tooltip-trigger:hover + .header-main-search,
-.tooltip-trigger:focus + .header-main-search {
+.tooltip-trigger:hover .header-main-search,
+.button-search:focus + .header-main-search {
   pointer-events: auto;
+  opacity: 1;
+}
+
+.header-main-search:focus-within {
   opacity: 1;
 }
 
@@ -435,11 +452,15 @@ input[type="radio"].visually-hidden {
 }
 
 .header-main-search input:hover {
+  padding: 0 14px;
+
   border: 2px solid #9a9a9a;
 }
 
 .header-main-search input:active,
 .header-main-search input:focus {
+  padding: 0 14px;
+
   border: 2px solid #2e88e4;
 
   outline: none;
@@ -447,7 +468,7 @@ input[type="radio"].visually-hidden {
 
 .log-in-form {
   position: absolute;
-  top: calc(100% - 18px);
+  top: calc(100% + 2px);
   right: 0px;
 
   display: flex;
@@ -465,9 +486,13 @@ input[type="radio"].visually-hidden {
   pointer-events: none;
 }
 
+.log-in-form:focus-within {
+  opacity: 1;
+}
+
 .log-in-form:hover,
-.tooltip-trigger:hover + .log-in-form,
-.tooltip-trigger:focus + .log-in-form {
+.tooltip-trigger:hover .log-in-form,
+.button-enter:focus + .log-in-form {
   pointer-events: auto;
   opacity: 1;
 }
@@ -492,11 +517,15 @@ input[type="radio"].visually-hidden {
 }
 
 .log-in-form input:hover {
+  padding: 0 11px;
+
   border: 2px solid #9a9a9a;
 }
 
 .log-in-form input:active,
 .log-in-form input:focus {
+  padding: 0 11px;
+
   border: 2px solid #2e88e4;
 
   outline: none;
@@ -947,8 +976,17 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 
+.transparent-product-layer:focus-within {
+  background-color: rgba(255, 255, 255, 0.2);
+
+  z-index: 1;
+}
+
 .transparent-product-layer:hover .button {
-  /* min-width: 200px; */
+  opacity: 1;
+}
+
+.transparent-product-layer:focus-within .button {
   opacity: 1;
 }
 
@@ -1205,11 +1243,15 @@ input[type="radio"].visually-hidden {
 }
 
 .mailing input:hover {
+  padding: 0 11px;
+
   border: 2px solid #9a9a9a;
 }
 
 .mailing input:active,
 .mailing input:focus {
+  padding: 0 11px;
+
   border: 2px solid #2e88e4;
 
   outline: none;
@@ -1364,11 +1406,15 @@ input[type="radio"].visually-hidden {
 }
 
 .ask-popup-form input:hover {
+  padding: 0 11px;
+
   border: 2px solid #9a9a9a;
 }
 
 .ask-popup-form input:active,
 .ask-popup-form input:focus {
+  padding: 0 11px;
+
   border: 2px solid #2e88e4;
 
   outline: none;
