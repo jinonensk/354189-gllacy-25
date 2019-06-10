@@ -1,7 +1,7 @@
 // index slider
 if (document.querySelector('.slider')) {
-  const sliderControls = document.querySelectorAll('.slider-control');
-  const slides = document.querySelectorAll('.slides .slide');
+  const sliderControls = [].slice.call(document.querySelectorAll('.slider-control'),0);
+  const slides = [].slice.call(document.querySelectorAll('.slides .slide'),0);
 
   sliderControls.forEach(function(item) {
     item.addEventListener('click', function(evt) {
