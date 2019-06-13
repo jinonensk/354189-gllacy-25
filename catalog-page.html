@@ -57,11 +57,11 @@
         <form class="log-in-form" method="get" action="https://echo.htmlacademy.ru" id="log-in-form">
           <ul class="log-in-form-list">
             <li>
-              <label for="user-email"></label>
+              <label for="user-email" aria-label="Электронная почта"></label>
               <input type="email" name="user-email" id="user-email" placeholder="Электронная почта">
             </li>
             <li>
-              <label for="user-password"></label>
+              <label for="user-password" aria-label="Пароль"></label>
               <input type="password" name="user-password" id="user-password" placeholder="Пароль">
             </li>
           </ul>
@@ -130,7 +130,7 @@
       <h2 class="visually-hidden">Фильты каталога товаров</h2>
       <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <label class="fieldset-title" for="sort-select">Сортировка:</label>
+          <label class="fieldset-title fieldset-title-select" for="sort-select">Сортировка:</label>
           <div class="filters-form-select-wrapper">
             <select name="sort" id="sort-select">
               <option selected value="by-popuplar">По популярности</option>
@@ -158,19 +158,19 @@
           <legend class="fieldset-title">Жирность:</legend>
           <ul class="filter-fat-list">
             <li class="filter-fat">
-              <input class="filter-radio visually-hidden" type="radio" name="fat-group" value="fat" id="filter-zero">
+              <input class="filter-radio visually-hidden" type="radio" name="fat-group" value="0" id="filter-zero">
               <label for="filter-zero">0%</label>
             </li>
             <li class="filter-fat">
-              <input class="filter-radio visually-hidden" type="radio" name="fat-group" value="fat" id="filter-low" checked>
+              <input class="filter-radio visually-hidden" type="radio" name="fat-group" value="10" id="filter-low" checked>
               <label for="filter-low">До 10%</label>
             </li>
             <li class="filter-fat">
-              <input class="filter-radio visually-hidden" type="radio" name="fat-group" value="fat" id="filter-medium">
+              <input class="filter-radio visually-hidden" type="radio" name="fat-group" value="30" id="filter-medium">
               <label for="filter-medium">До 30%</label>
             </li>
             <li class="filter-fat">
-              <input class="filter-radio visually-hidden" type="radio" name="fat-group" value="fat" id="filter-high">
+              <input class="filter-radio visually-hidden" type="radio" name="fat-group" value="31" id="filter-high">
               <label for="filter-high">Выше 30%</label>
             </li>
           </ul>

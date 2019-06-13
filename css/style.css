@@ -27,6 +27,7 @@
 
 
 body {
+  min-width: 1200px;
   margin: 0;
 
   font-family: "Roboto", "Arial", sans-serif;
@@ -151,7 +152,8 @@ input[type="radio"].visually-hidden {
 .header-main {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
+  right: 0;
   z-index: 1;
 
   display: -webkit-box;
@@ -164,7 +166,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: start;
      -ms-flex-pack: start;
    justify-content: flex-start;
-  margin-left: -600px;
+  margin: 0 auto;
   padding-top: 9px;
 }
 
@@ -2009,7 +2011,7 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
 }
 
-label.fieldset-title {
+.fieldset-title-select {
   display: block;
 }
 
@@ -2038,7 +2040,7 @@ label.fieldset-title {
           appearance: none;
 }
 
-select::-ms-expand {
+.filters-form select::-ms-expand {
   display: none;
 }
 
